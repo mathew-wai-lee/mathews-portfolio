@@ -14,7 +14,7 @@ export const Meteors = ({ number }: { number?: number }) => {
           )}
           style={{
             top: 0,
-            left: Math.floor(Math.random() * (4000) + -0) + "px", // *(# - #) is the scale (how wide), the + -# is how far to translate from the left. If too wide, the meteors will be too infrequent
+            left: Math.floor(Math.random() * (1000) + -0) + "px", // *(# - #) is the scale (how wide), the + -# is how far to translate from the left. If too wide, the meteors will be too infrequent
             animationDelay: Math.random() * (0.8 - 0.2) + 0.2 + "s",
             animationDuration: Math.floor(Math.random() * (10 - 2) + 2) + "s",
           }}

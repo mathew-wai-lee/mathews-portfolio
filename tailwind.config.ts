@@ -20,11 +20,11 @@ const config: Config = {
       keyframes: {
 
         meteor: {
-          "0%": { transform: "rotate(225deg) translateX(0)", opacity: 1 },
-          "70%": { opacity: 1 },
+          "0%": { transform: "rotate(225deg) translateX(0)", opacity: "1" },
+          "70%": { opacity: "1" },
           "100%": {
             transform: "rotate(225deg) translateX(-750px)",
-            opacity: 0,
+            opacity: "0",
           },
         },
       },
