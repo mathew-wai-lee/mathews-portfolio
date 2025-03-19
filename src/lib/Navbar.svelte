@@ -2,7 +2,7 @@
 	import { scrollTo, scrollRef, scrollTop } from 'svelte-scrolling';
 </script>
 
-<div class="navbar bg-neutral text-neutral-content">
+<div class="navbar bg-neutral text-neutral-content sticky top-0">
 	<div class="flex-1">
 		<a use:scrollTo={'home'} href="#Home" class="btn btn-ghost text-xl">daisyUI</a>
 	</div>
