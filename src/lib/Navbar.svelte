@@ -7,7 +7,7 @@
 
 <div class="navbar bg-neutral text-neutral-content">
     <div class="flex-1">
-      <a use:scrollTo={'home'} class="btn btn-ghost text-xl">daisyUI</a>
+      <a use:scrollTo={'home'} href="#Home" class="btn btn-ghost text-xl">daisyUI</a>
     </div>
     <div class="flex-none">
       <ul class="menu menu-horizontal px-1">

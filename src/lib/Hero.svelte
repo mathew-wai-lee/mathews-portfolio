@@ -3,7 +3,7 @@
 </script>
 
 <div class="night">
-  <div class="hero ghost min-h-screen">
+  <div class="hero ghost min-h-screen" id="main-hero">
     <div class="hero-content text-center">
       <div class="max-w-md">
         <h1 class="text-5xl">Hello! I'm <span class="hero_highlight">Mathew.</span></h1>
