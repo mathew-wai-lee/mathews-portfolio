@@ -1,29 +1,6 @@
 @import "tailwindcss";
 
-@plugin "daisyui" {
-  themes: light --default, dark --prefersdark, cupcake;
-}
-
-p {
-  color: white;
-}
-
-.hero_highlight {
-  color: #FB8A05;
-}
-
-h1 {
-  color: white;
-}
-
-.btn {
-  color: #FB8A05;
-}
-
-.btn:hover {
-  background-image: linear-gradient(to right, #FB8A05 0%, #9E00FF 100%);
-  color: white;
-}
+@plugin "daisyui";
 
 body {
   /* background: radial-gradient(circle at bottom, #071026 0%, #090a0f 100%); */
