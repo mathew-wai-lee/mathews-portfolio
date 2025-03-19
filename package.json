@@ -69,6 +69,7 @@
 		"@oslojs/crypto": "^1.0.1",
 		"@oslojs/encoding": "^1.1.0",
 		"daisyui": "^5.0.6",
-		"drizzle-orm": "^0.40.0"
+		"drizzle-orm": "^0.40.0",
+		"svelte-scrolling": "^1.5.1"
 	}
 }
