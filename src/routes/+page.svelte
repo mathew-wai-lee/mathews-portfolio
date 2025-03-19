@@ -1,57 +1,63 @@
-<script>
+<script lang="ts">
 	import '../app.css';
 	import Navbar from '$lib/Navbar.svelte';
 	import Hero from '$lib/Hero.svelte';
 	import profile_photo from '$lib/assets/images/profile-photo-2023_V2.png';
 	import WorkPlaceLogos from '$lib/WorkplaceLogos.svelte';
 	import ProjectGrid from '$lib/ProjectGrid.svelte';
-	import { scrollTo, scrollRef, scrollTop } from 'svelte-scrolling';
 </script>
 
-<section use:scrollRef={'home'}>
+<section id="home">
 	<Hero />
 </section>
 
+
 <Navbar />
 
-<section id="about">
-	<div class="flex items-center justify-center">
-		<div class="max-w-md justify-center text-center py-10">
+<section id="about" class="h-screen">
+	
+	<div class="flex items-center justify-center pt-25">
+		<div class="max-w-md justify-center py-3 text-center">
 			<h1 class="text-5xl">About Me</h1>
-			<img src={profile_photo} alt="A photo of a man smiling" class="py-6" />
+			<!-- svelte-ignore a11y_img_redundant_alt -->
+			<img
+				src={profile_photo}
+				alt="Profile Photo"
+				class="h-106 w-96 object-cover object-center pt-5"
+			/>
 		</div>
 	</div>
-	<div class="flex items-center justify-center">
+	<div class="flex items-center justify-center pt-5">
 		<p class="max-w-3xl text-center">
-			I love to build things! That’s why I became an engineer. Along the way I fell in love with
-			Programming, Python, and Javascript. I’m a passionate leader with 7+ years of experience
+			I love to build things! That's why I became an engineer. Along the way I fell in love with
+			Programming, Python, and Javascript. I'm a passionate leader with 7+ years of experience
 			bringing analytics to supply chain, marketing, and E-Commerce. Currently honing my skills in
 			the Masters of Data Science Degree program at UT Austin. Now leading an amazing team of 4 as
 			Business Intelligence Manager for E-Commerce Analytics at Amazon (Whole Foods Market). When
-			I’m not building things, I’m traveling, gardening, learning a new instrument!
+			I'm not building things, I'm traveling, gardening, learning a new instrument!
 		</p>
 	</div>
 	<WorkPlaceLogos />
 </section>
 
-<section use:scrollRef={'projects'}>
-	<ProjectGrid />
+<section id="projects" class="h-screen pt-15">
+	
+	<div class="flex items-center justify-center">
+		<div class="max-w-md justify-center py-10 text-center">
+			<h1 class="text-5xl">Projects</h1>
+		</div>
+	</div>
+	<div class="flex items-center justify-center">
+		<ProjectGrid />
+	</div>
 </section>
 
-<section use:scrollRef={'projects'}>
-	<ProjectGrid />
-</section>
-
-<section use:scrollRef={'projects'}>
-	<ProjectGrid />
-</section>
-
-<section use:scrollRef={'projects'}>
-	<ProjectGrid />
-</section>
-
-<section use:scrollRef={'projects'}>
-	<ProjectGrid />
+<section id="connect" class="h-screen pt-15">
+	<div class="flex items-center justify-center">
+		<div class="max-w-md justify-center py-10 text-center">
+			<h1 class="text-5xl">Connect</h1>
+		</div>
+	</div>
 </section>
 
 <!-- 

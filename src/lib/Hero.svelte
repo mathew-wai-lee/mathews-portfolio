@@ -1,5 +1,10 @@
 <script>
 	import './Hero.css';
+	import { scrollToElement } from './utils/scroll';
+
+	function handleScroll() {
+		scrollToElement('about');
+	}
 </script>
 
 <div class="night">
@@ -12,8 +17,9 @@
 					<span class="text-amber-500">front-end developer.</span>
 				</p>
 				<button
-					class="btn btn-outline border-amber-600 from-amber-500 from-0% to-purple-700 to-100% text-amber-600 hover:border-0 hover:bg-gradient-to-r hover:text-white"
-					>View My Work
+					class="btn btn-outline border-amber-500 from-amber-500 from-0% to-purple-700 to-100% text-amber-500 hover:border-0 hover:bg-gradient-to-r hover:text-white"
+					on:click={handleScroll}
+				>View My Work
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="16"

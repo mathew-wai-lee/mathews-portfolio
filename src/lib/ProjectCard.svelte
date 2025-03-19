@@ -1,21 +1,7 @@
 <script>
-	const navItems = [
-	{ href: 'home', label: 'Home' },
-	{ href: 'about', label: 'About' },
-	{ href: 'projects', label: 'Projects' },
-	{ href: 'connect', label: 'Connect' }
-];
 </script>
 
 <div class="grid place-items-center">
-	{#each navItems as item}
-					<button
-						
-						class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
-					>
-						{item.label}
-					</button>
-				{/each}
 	<div class="grid h-64 grid-cols-3 content-stretch gap-5">
 		<div
 			class=" flex h-48 w-64 items-center justify-center rounded-xl bg-gray-300/10 shadow-lg shadow-black"

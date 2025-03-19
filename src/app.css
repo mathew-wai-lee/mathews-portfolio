@@ -3,4 +3,4 @@
 @plugin "daisyui";
 
 /* html { height: 100%; overflow:auto; } */
-html { background-color: #070c28; }
+html { background-color: #070c28; overflow: auto; }
