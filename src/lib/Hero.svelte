@@ -7,10 +7,17 @@
 	}
 </script>
 
-<div class="night">
-	<div class="hero ghost min-h-screen" id="main-hero">
+<div class="night relative flex min-h-screen rotate-z-45">
+	<div class="">
+		<!-- nth child stars -1 for original star -->
+		{#each { length: 16 }} 
+			<div class="shooting_star"></div>
+		{/each}
+	</div>
+
+	<div class="hero -rotate-z-45">
 		<div class="hero-content text-center">
-			<div class="max-w-md">
+			<div class="p-2">
 				<h1 class="text-5xl text-white">Hello! I'm <span class="text-amber-500">Mathew.</span></h1>
 				<p class="prose py-6 text-white">
 					I'm a <span class="text-amber-500">data scientist</span> and aspiring
@@ -19,7 +26,7 @@
 				<button
 					class="btn btn-outline border-amber-500 from-amber-500 from-0% to-purple-700 to-100% text-amber-500 hover:border-0 hover:bg-gradient-to-r hover:text-white"
 					on:click={handleScroll}
-				>View My Work
+					>View My Work
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="16"
@@ -41,27 +48,4 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="shooting_star"></div>
-	<div class="shooting_star"></div>
-	<div class="shooting_star"></div>
-	<div class="shooting_star"></div>
-	<div class="shooting_star"></div>
-	<div class="shooting_star"></div>
-	<div class="shooting_star"></div>
-	<div class="shooting_star"></div>
-	<div class="shooting_star"></div>
-	<div class="shooting_star"></div>
-	<div class="shooting_star"></div>
-	<div class="shooting_star"></div>
-	<div class="shooting_star"></div>
-	<div class="shooting_star"></div>
-	<div class="shooting_star"></div>
-	<div class="shooting_star"></div>
-	<div class="shooting_star"></div>
-	<div class="shooting_star"></div>
-	<div class="shooting_star"></div>
-	<div class="shooting_star"></div>
-	<div class="shooting_star"></div>
-	<div class="shooting_star"></div>
 </div>
