@@ -9,7 +9,8 @@
 
 <div class="night relative flex min-h-screen rotate-z-45">
 	<div class="">
-		{#each { length: 2 }}
+		<!-- nth child stars -1 for original star -->
+		{#each { length: 16 }} 
 			<div class="shooting_star"></div>
 		{/each}
 	</div>
