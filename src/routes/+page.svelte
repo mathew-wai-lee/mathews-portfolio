@@ -5,7 +5,7 @@
 	import profile_photo from '$lib/assets/images/profile-photo-2023_V2.png';
 	import WorkPlaceLogos from '$lib/WorkplaceLogos.svelte';
 	import ProjectGrid from '$lib/ProjectGrid.svelte';
-
+	import Footer from '$lib/Footer.svelte';
 	const formFields = [
 		{ name: 'name', label: 'Name', type: 'textarea' },
 		{ name: 'email', label: 'Email', type: 'email' },
@@ -59,9 +59,9 @@
 		</div>
 	</section> -->
 
-	<section id="connect" class="max-h-screen max-w-screen overflow-hidden bg-amber-500">
+	<section id="connect" class="h-auto overflow-hidden bg-amber-500">
 		
-			<div class="flex-col justify-center text-center">
+			<div class="flex-col justify-center text-center w-full h-full">
 				<h1 class="text-2xl font-mono">Connect</h1>
 				<h2 class="text-L mt-2 font-mono">Schedule some time with me!</h2>
 				
@@ -89,8 +89,9 @@
 		
 	</section>
 
-	<!-- 
-<scrollTop>
-	<button on:click={() => scrollTop()}>Go to top</button>
-</scrollTop> -->
+	<section id="footer">
+		<Footer />
+	</section>
+
+
 </div>
