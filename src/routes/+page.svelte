@@ -11,6 +11,7 @@
 		{ name: 'email', label: 'Email', type: 'email' },
 		{ name: 'message', label: 'Message', type: 'textarea' }
 	];
+	
 </script>
 
 <section id="home">
@@ -48,7 +49,7 @@
 		</div>
 	</section>
 
-	<!-- <section id="projects" class="h-screen pt-15">
+	<section id="projects" class="h-screen ">
 		<div class="flex items-center justify-center">
 			<div class="max-w-md justify-center py-10 text-center">
 				<h1 class="text-5xl">Projects</h1>
@@ -57,37 +58,9 @@
 		<div class="flex items-center justify-center">
 			<ProjectGrid />
 		</div>
-	</section> -->
-
-	<section id="connect" class="h-auto overflow-hidden bg-amber-500">
-		
-			<div class="flex-col justify-center text-center w-full h-full">
-				<h1 class="text-2xl font-mono">Connect</h1>
-				<h2 class="text-L mt-2 font-mono">Schedule some time with me!</h2>
-				
-				<form class="" action="" method="POST">
-					{#each formFields as field}
-						<div class="form-control mt-2">
-							<label class="label mt-2">
-								<span class="label-text text-base">{field.label}</span>
-							</label>
-							<input
-								type={field.type}
-								name={field.name}
-								placeholder={field.label}
-								class="input input-bordered mt-2"
-							/>
-						</div>
-					{/each}
-
-					<button
-						class="btn btn-outline mt-4 border-0 bg-gradient-to-r from-amber-500 from-0% to-purple-700 to-100% text-white hover:bg-gradient-to-r"
-						>Submit</button
-					>
-				</form>
-			</div>
-		
 	</section>
+
+
 
 	<section id="footer">
 		<Footer />
@@ -95,3 +68,4 @@
 
 
 </div>
+
