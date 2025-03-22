@@ -21,13 +21,13 @@
 </section>
 
 <div class="">
-	<div class="sticky top-0 ">
+	<div class="sticky top-0 z-100">
 		<Navbar />
 	</div>
 
 	<section id="about" class="">
 		<div class="flex-col mt-15 w-xs mx-auto sm:w-full  ">
-			<h1 class="text-5xl text-center">About Me</h1>
+			<h1 class="text-5xl text-center font-mono">About Me</h1>
 			<!-- svelte-ignore a11y_img_redundant_alt -->
 			<img
 			src={profile_photo}
@@ -49,10 +49,10 @@
 		</div>
 	</section>
 
-	<section id="projects" class="h-screen ">
+	<section id="projects" class="h-auto mb-10">
 		<div class="flex items-center justify-center">
 			<div class="max-w-md justify-center py-10 text-center">
-				<h1 class="text-5xl">Projects</h1>
+				<h1 class="text-5xl font-mono">Projects</h1>
 			</div>
 		</div>
 		<div class="flex items-center justify-center">

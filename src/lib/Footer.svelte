@@ -37,7 +37,7 @@
 	]
 </script>
 
-<footer class="footer bg-neutral text-neutral-content flex items-center justify-between p-4 text-xs">
+<footer class="footer bg-neutral text-neutral-content flex items-center justify-between p-4 text-xs md:text-base font-mono">
 	<aside class="grid-flow-col items-center">
 		<!-- <p>Copyright © {new Date().getFullYear()} - All right reserved</p> -->
 		 <p>Made with ❤️ using Svelte</p>
