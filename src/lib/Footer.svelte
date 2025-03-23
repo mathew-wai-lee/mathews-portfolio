@@ -12,6 +12,10 @@
 		{
 			src: 'https://img.shields.io/badge/Figma-white?logo=figma',
 			href: 'https://figma.com/'
+		},
+		{
+			src: 'https://img.shields.io/badge/Svelte-white?logo=svelte',
+			href: 'https://svelte.dev/'
 		}
 		
 	];
@@ -37,30 +41,37 @@
 	]
 </script>
 
-<footer class="footer bg-neutral text-neutral-content flex items-center justify-between p-4 text-xs md:text-base font-mono">
-	<aside class="grid-flow-col items-center">
-		<!-- <p>Copyright © {new Date().getFullYear()} - All right reserved</p> -->
-		 <p>Made with ❤️ using Svelte</p>
-	</aside>
-	    
-	<!-- <p> ©{new Date().getFullYear()} Mathew Lee</p> -->
-	<nav>
-		<div class="grid grid-flow-col gap-1 sm:gap-4">
-			{#each socialMedia as socials}
+<footer class="footer footer-center footer-horizontal bg-gray-950 p-7 ">
+	
+	
+		<nav>
+			<div class="flex gap-4">
+				{#each socialMedia as socials}
 		  <a href={socials.href}>
-			<img src="{socials.src}" alt="" class="w-7 h-7">
+			<img src="{socials.src}" alt="" class="w-8 h-8">
 		  </a>
 		  {/each}
 		</div>
 	  </nav>
 
-	<nav class="grid-flow-col gap-1 sm:gap-4">
-		{#each shields as shield}
-			<!-- svelte-ignore a11y_consider_explicit_label -->
-			<a href={shield.href}>
-				<!-- svelte-ignore a11y_missing_attribute -->
-				<img src={shield.src} class="h-3 sm:h-5" />
-			</a>
-		{/each}
-	</nav>
+	<aside class= "items-center justify-center">
+		<!-- <p>Copyright © {new Date().getFullYear()} - All right reserved</p> -->
+		 <p class="font-mono text-base mb-2" >Made with ❤️ using</p>
+		 <nav class="flex gap-2 sm:gap-3">
+			{#each shields as shield}
+				<!-- svelte-ignore a11y_consider_explicit_label -->
+				<a href={shield.href}>
+					<!-- svelte-ignore a11y_missing_attribute -->
+					<img src={shield.src} class="sm:h-5" />
+				</a>
+			{/each}
+		</nav>
+	</aside>
+
+	
+	    
+	<!-- <p> ©{new Date().getFullYear()} Mathew Lee</p> -->
+
+
+
 </footer>
