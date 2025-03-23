@@ -5,8 +5,7 @@
 	const navItems = [
 		{ href: 'home', label: 'Home' },
 		{ href: 'about', label: 'About' },
-		{ href: 'projects', label: 'Projects' },
-		{ href: 'connect', label: 'Connect' }
+		{ href: 'projects', label: 'Projects' }
 	];
 
 	function handleScroll(href: string) {

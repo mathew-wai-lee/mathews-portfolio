@@ -45,7 +45,7 @@
 	    
 	<!-- <p> ©{new Date().getFullYear()} Mathew Lee</p> -->
 	<nav>
-		<div class="grid grid-flow-col gap-4">
+		<div class="grid grid-flow-col gap-1 sm:gap-4">
 			{#each socialMedia as socials}
 		  <a href={socials.href}>
 			<img src="{socials.src}" alt="" class="w-7 h-7">
@@ -54,12 +54,12 @@
 		</div>
 	  </nav>
 
-	<nav class="grid-flow-col gap-4">
+	<nav class="grid-flow-col gap-1 sm:gap-4">
 		{#each shields as shield}
 			<!-- svelte-ignore a11y_consider_explicit_label -->
 			<a href={shield.href}>
 				<!-- svelte-ignore a11y_missing_attribute -->
-				<img src={shield.src} />
+				<img src={shield.src} class="h-3 sm:h-5" />
 			</a>
 		{/each}
 	</nav>
