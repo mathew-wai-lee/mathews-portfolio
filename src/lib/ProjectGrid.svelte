@@ -32,7 +32,7 @@
 			bodyText:
 				'“Big Data” no longer requires a complicated cluster of machines and a PhD. We can use Docker to run a local analytics stack! I’ve used this stack to train teams at Amazon/WFM on the internals of PySpark and Docker.',
 			link: 'https://github.com/josephroque/e2e-nli-paper',
-			badges: ['Docker', 'PySpark', 'PyTorch']
+			badges: ['Docker', 'Apache-Spark', 'PyTorch']
 		},
 		{
 			image: Img4,
@@ -81,7 +81,7 @@
 				<div class="link link-hover link-info mb-3">
 					<a href={project.link}>Read More</a>
 				</div>
-				<div class="card-actions justify-end">
+				<div class="card-actions justify-end ">
 					{#each project.badges as badge}
 						<img src="https://img.shields.io/badge/{badge}-black?logo={badge}" alt="Static Badge" />
 					{/each}
