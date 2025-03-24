@@ -1,5 +1,5 @@
 <script>
-	import './src/lib/hero.css';
+	import './hero.css';
 	import { scrollToElement } from './utils/scroll';
 
 	function handleScroll() {
